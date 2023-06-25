@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;1,300&family=Poppins:ital,wght@0,100;0,200;1,100&family=Raleway:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Rubik:ital,wght@0,400;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  /* overflow: hidden; */
+}
+
+.header {
+  background-image: url("main.jpg");
+  /* width: 100%; */
+  /* overflow: hidden; */
+  height: 130vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  padding: 12px 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.2s ease;
+}
+
+nav ul li a:hover{
+  color: #ff8700;
+}
+
+.discount p {
+  color: #ff8700;
+  font-size: 30px;
+  font-family: cursive;
+  margin-left: 100px;
+  margin-top: 4rem;
+}
+
+.discount h1 {
+  line-height: 6rem;
+  color: #fff;
+  font-size: 5rem;
+  margin-left: 100px;
+  margin-top: 32px;
+  width: 60%;
+}
+
+.discount h2 {
+  margin-left: 100px;
+}
+
+.discount button {
+  padding: 20px 40px;
+  margin-left: 100px;
+  margin-top: 2rem;
+  border: 2px solid gray;
+  font-size: 20px;
+  background: transparent;
+  color: #fff;
+  outline: 0;
+  transition: 1.2s ease;
+  cursor: pointer;
+}
+
+.discount button:hover {
+  background-color: #ff8700;
+  border: none;
+}
+
+.card_section {
+  background-image: url("secondSection.jpg");
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  /* transform: 1.2s ease; */
+  flex-wrap: wrap;
+  /* background-color: red; */
+  width: 40%;
+  margin: 10px;
+  margin-top: 4rem;
+}
+
+.card img{
+  overflow: hidden;
+    width: 83%;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.card img:hover{
+  cursor: default;
+    transform: rotate(4deg);
+}
+
+.card p{
+    color: #ff8700;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.card h1{
+    width: 90%;
+    /* font-size: 4rem; */
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.card h3{
+    width: 100%;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.card button{
+    padding: 20px 40px;
+  margin-top: 2rem;
+  border: 2px solid gray;
+  font-size: 20px;
+  background: transparent;
+  color: #fff;
+  outline: 0;
+  transition: 1.2s ease;
+  cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #ff8700;
+    border: none;
+  }
+
+.container_cart{
+    background-image: url('secondSection.jpg');
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.cartDiv{
+    background: #011920;
+    width:25% ;
+    height: 70vh;
+    margin: 20px;
+}
+
+.Cart_image img{
+  overflow: hidden;
+    width: 100%;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.Cart_image img:hover{
+    cursor: default;
+    transform: rotate(4deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.Cart_image p{
+    color: #ff8700;
+    padding: 10px;
+}
+
+.Cart_image h2{
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+}
+
+.itemName{
+  font-size: 15px;
+  /* background-color:#ff8700; */
+ 
+}
+
+
+.foodMenu{
+  font-size: 4rem;
+}
+
+
+/* contact page  */
+
+
+
+
+
+footer{
+  background-color: #011920;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+footer h2{
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul li a {
+    margin-left: -28px;
+  }
+
+  .discount p {
+    width: 90%;
+    position: relative;
+    right: 5rem;
+  }
+
+  .discount h2 {
+    position: relative;
+    right: 5rem;
+  }
+
+  .discount h1 {
+    width: 100%;
+    font-size: 22px;
+    position: relative;
+    right: 5rem;
+    font-size: 2rem;
+  }
+
+  .discount button {
+    position: relative;
+    right: 5rem;
+  }
+  .header {
+    height: 100vh;
+    /* display: none */
+  }
+
+  .card_section{
+    flex-direction: column;
+    height: 120vh;
+  }
+
+  .card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card h3{
+    text-align: center;
+    width: 90%;
+  }
+
+  .card h1{
+    text-align: center;
+  }
+  .container_cart{
+    flex-direction: column;
+    height: 190vh;
+  }
+
+  .cartDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    /* overflow: hidden; */
+  }
+
+
+
+}
+
